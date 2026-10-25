@@ -1,0 +1,11 @@
+{
+  "appName": {
+    "message": "PiggyBank"
+  },
+  "appShort": {
+    "message": "PiggyBank"
+  },
+  "appDesc": {
+    "message": "Кошелёк-копилка на Solana: копите на цели в SOL, USDC и USDT, меняйте их между собой и запирайте отложенное от спонтанных трат."
+  }
+}

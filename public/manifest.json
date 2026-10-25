@@ -1,0 +1,58 @@
+{
+  "manifest_version": 3,
+  "name": "__MSG_appName__",
+  "short_name": "__MSG_appShort__",
+  "version": "1.0",
+  "description": "__MSG_appDesc__",
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "__MSG_appShort__",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "permissions": [
+    "storage",
+    "alarms",
+    "notifications",
+    "clipboardRead",
+    "declarativeNetRequestWithHostAccess"
+  ],
+  "host_permissions": [
+    "https://api.jup.ag/*",
+    "https://solana-rpc.publicnode.com/*",
+    "https://public.rpc.solanavibestation.com/*",
+    "https://api.mainnet-beta.solana.com/*",
+    "https://api.mainnet.solana.com/*",
+    "https://solana-mainnet.gateway.tatum.io/*",
+    "https://solana.api.pocket.network/*",
+    "https://api.devnet.solana.com/*"
+  ],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "rpc_origin",
+        "enabled": true,
+        "path": "rpc_rules.json"
+      }
+    ]
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'; base-uri 'self'; form-action 'none'; frame-ancestors 'none'"
+  },
+  "minimum_chrome_version": "116",
+  "default_locale": "en"
+}

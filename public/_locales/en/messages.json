@@ -1,0 +1,11 @@
+{
+  "appName": {
+    "message": "PiggyBank"
+  },
+  "appShort": {
+    "message": "PiggyBank"
+  },
+  "appDesc": {
+    "message": "A piggy bank wallet on Solana: save toward goals in SOL, USDC and USDT, swap between them and lock savings away from impulse buys."
+  }
+}

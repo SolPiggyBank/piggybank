@@ -1,0 +1,11 @@
+{
+  "appName": {
+    "message": "PiggyBank"
+  },
+  "appShort": {
+    "message": "PiggyBank"
+  },
+  "appDesc": {
+    "message": "Mealheiro e carteira na Solana: poupe para metas em SOL, USDC e USDT, troque-os entre si e proteja a poupança de gastos por impulso."
+  }
+}

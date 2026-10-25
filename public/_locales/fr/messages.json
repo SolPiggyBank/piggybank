@@ -1,0 +1,11 @@
+{
+  "appName": {
+    "message": "PiggyBank"
+  },
+  "appShort": {
+    "message": "PiggyBank"
+  },
+  "appDesc": {
+    "message": "Tirelire-portefeuille Solana : épargnez pour vos objectifs en SOL, USDC et USDT, échangez-les et évitez les achats impulsifs."
+  }
+}

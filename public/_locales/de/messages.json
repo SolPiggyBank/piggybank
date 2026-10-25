@@ -1,0 +1,11 @@
+{
+  "appName": {
+    "message": "PiggyBank"
+  },
+  "appShort": {
+    "message": "PiggyBank"
+  },
+  "appDesc": {
+    "message": "Sparschwein-Wallet für Solana: Spare in SOL, USDC und USDT auf Ziele, tausche sie und schütze Erspartes vor Spontankäufen."
+  }
+}

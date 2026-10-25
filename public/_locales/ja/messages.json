@@ -1,0 +1,11 @@
+{
+  "appName": {
+    "message": "PiggyBank"
+  },
+  "appShort": {
+    "message": "PiggyBank"
+  },
+  "appDesc": {
+    "message": "Solana の貯金箱ウォレット。SOL・USDC・USDT で目標に向けて貯金し、相互にスワップ。貯めたお金は衝動買いから守れます。"
+  }
+}

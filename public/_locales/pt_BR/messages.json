@@ -1,0 +1,11 @@
+{
+  "appName": {
+    "message": "PiggyBank"
+  },
+  "appShort": {
+    "message": "PiggyBank"
+  },
+  "appDesc": {
+    "message": "Cofrinho e carteira na Solana: guarde para metas em SOL, USDC e USDT, troque entre eles e proteja a poupança de gastos por impulso."
+  }
+}

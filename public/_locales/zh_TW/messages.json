@@ -1,0 +1,11 @@
+{
+  "appName": {
+    "message": "PiggyBank"
+  },
+  "appShort": {
+    "message": "PiggyBank"
+  },
+  "appDesc": {
+    "message": "Solana 存錢筒錢包：用 SOL、USDC 和 USDT 為目標存錢，在它們之間兌換，還能鎖住存款，遠離衝動消費。"
+  }
+}

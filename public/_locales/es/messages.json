@@ -1,0 +1,11 @@
+{
+  "appName": {
+    "message": "PiggyBank"
+  },
+  "appShort": {
+    "message": "PiggyBank"
+  },
+  "appDesc": {
+    "message": "Alcancía y billetera en Solana: ahorra para metas en SOL, USDC y USDT, intercámbialos y protege tus ahorros de compras impulsivas."
+  }
+}
