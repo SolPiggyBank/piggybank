@@ -1,0 +1,37 @@
+{
+  "name": "piggybank",
+  "version": "1.0.0",
+  "description": "PiggyBank: a piggy bank wallet for Solana, as a Chrome extension. Save toward goals in jars, lock savings until you reach them, swap SOL, USDC and USDT.",
+  "homepage": "https://solpiggybank.com",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --import ./test/register-jsx.mjs test/core.test.mjs && node --import ./test/register-jsx.mjs test/locker.test.mjs && node --import ./test/register-jsx.mjs test/jupiter-lock.test.mjs && node --import ./test/register-jsx.mjs test/swap.test.mjs && node test/rpc.test.mjs && node test/deposits.test.mjs && node test/poison.test.mjs && node --import ./test/register-jsx.mjs scripts/check_i18n.mjs",
+    "build": "vite build",
+    "pack": "vite build && rm -f piggybank-extension.zip && cd dist && zip -qr -X ../piggybank-extension.zip . -x '_metadata/*'",
+    "dev": "vite",
+    "e2e": "python3 test/e2e.py && node test/verify_txs.mjs && python3 test/e2e_drag.py && python3 test/e2e_security.py && python3 test/e2e_money.py && python3 test/e2e_swap.py && node test/verify_swaps.mjs && python3 test/e2e_langs.py"
+  },
+  "dependencies": {
+    "@fontsource-variable/onest": "^5.3.1",
+    "@fontsource-variable/unbounded": "^5.3.0",
+    "@noble/hashes": "^2.4.0",
+    "@scure/bip39": "^2.4.0",
+    "@solana/spl-token": "^0.4.9",
+    "@solana/web3.js": "^1.98.4",
+    "@streamflow/stream": "^13.4.0",
+    "bn.js": "^5.2.3",
+    "bs58": "^6.0.0",
+    "buffer": "^6.0.3",
+    "canvas-confetti": "^1.9.4",
+    "preact": "^10.29.8",
+    "qrcode": "^1.5.4"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.10.6",
+    "ed25519-hd-key": "^2.0.0",
+    "tweetnacl": "^1.0.3",
+    "vite": "^8.3.4"
+  }
+}
